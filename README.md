@@ -22,7 +22,7 @@ A web-based healthcare management system for college clinics, built with **HTML*
 ---
 
 ## 📂 Project Structure
-
+```
 dbmsrepo/
 │
 ├── index.html
@@ -34,3 +34,4 @@ dbmsrepo/
 │ └── ...
 └── database/
 └── schema.sql
+```
