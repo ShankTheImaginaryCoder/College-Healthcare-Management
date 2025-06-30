@@ -1,0 +1,1 @@
+ScrollReveal().reveal('.reveal',{easing:"ease-in",delay:6,origin:'left',opacity:0,scale:1.5,reset:true})

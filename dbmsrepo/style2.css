@@ -1,0 +1,198 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgb(130, 106, 251);
+}
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .gender-box {
+  margin-top: 20px;
+}
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: rgb(130, 106, 251);
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color:rgb(41, 39, 39);
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+
+textbox{
+    color: #707070;
+    font-size:2rem;
+    width:100%;
+}
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: 2px solid rgb(3,3,64);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(3,3,64);
+}
+.form button:hover {
+  background: rgb(46, 23, 162);
+  box-shadow:0 0 8px rgb(4, 4, 125);
+  
+}
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
+
+
+/*new changes*/
+.header{
+    color:rgb(3,3,64);
+}
+
+select{
+    width:100%;
+    height:50px;
+    border-radius:5%;
+    border:2px solid #707070;
+}
+
+
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:var(--normal-font-size);
+    background: linear-gradient(rgb(175,223,223),rgb(118, 134, 253)), rgba(0,0,0,1);
+    /*background-color:rgb(175, 223, 223);
+    background-image:*/
+    color:rgb(11, 9, 9);
+}
+
+.transparent-bg {
+    position: relative; 
+}
+
+.transparent-bg::before {
+    content: '';
+    background-image: url('appointment.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6; 
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0; 
+    bottom: 0;
+    z-index: -1; 
+}
+
+.lb{
+    align-items:center;
+}
+
+/*blur effect for form*/
+.container{
+    background: rgba(255, 255, 255, 0.182); 
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(63, 16, 217, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.flex{
+  display:flex;
+  flex-direction: column;
+}
+
+
+/*.container{
+    background: rgba(255, 255, 255, 0.336); 
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(63, 16, 217, 0.2);
+}
+*/
